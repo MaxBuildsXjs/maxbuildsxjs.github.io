@@ -65,4 +65,33 @@ footer { background: #111; color: #ccc; text-align: center; padding: 20px; margi
   color: #005999;
   text-decoration: underline;
 }
+/* === Hero Section Background Image === */
+.hero {
+  position: relative;
+  background-image: url('images/hero-bg.jpg'); /* Path to your background image */
+  background-size: cover;           /* Image covers entire section */
+  background-position: center;      /* Center the image */
+  background-repeat: no-repeat;     /* No tiling */
+  color: white;                     /* Text color */
+  text-align: center;
+  padding: 100px 20px;              /* Spacing for large banner look */
+  overflow: hidden;                 /* Keep overlay inside */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+  z-index: 1;
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 2;  /* Keep text above the overlay */
+}
 
