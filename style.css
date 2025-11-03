@@ -68,7 +68,7 @@ footer { background: #111; color: #ccc; text-align: center; padding: 20px; margi
 /* === Hero Section Background Image === */
 .hero {
   position: relative;
-  background-image: url('images/hero-bg.jpg'); /* Path to your background image */
+  background-image: url('images/background.jpeg'); /* Path to your background image */
   background-size: cover;           /* Image covers entire section */
   background-position: center;      /* Center the image */
   background-repeat: no-repeat;     /* No tiling */
