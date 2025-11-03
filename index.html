@@ -1,17 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Welcome to My Website</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { font-family: Arial; background: #f8f8f8; text-align: center; padding: 100px; }
-    h1 { color: #333; }
-    p { color: #555; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MaxBuildsXJ | Trail Guides & Builds</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hello, I’m Max!</h1>
-  <p>Welcome to my website — more content coming soon.</p>
+  <header>
+    <img src="images/logo.png" alt="MaxBuildsXJ Logo" class="logo">
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="https://youtube.com/@MaxBuildsXJ" target="_blank">YouTube</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to MaxBuildsXJ</h1>
+    <p>Trail guides, off-road builds, and everything Jeep.</p>
+    <a href="#trails" class="btn">Explore Trails</a>
+  </section>
+
+  <section id="trails">
+    <h2>Featured Trails</h2>
+    <div class="gallery">
+      <img src="images/jeep1.jpg" alt="Jeep on Argentine Pass">
+      <img src="images/trailguide.png" alt="Trail map">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 MaxBuildsXJ — Built with GitHub Pages</p>
+  </footer>
 </body>
 </html>
