@@ -18,3 +18,51 @@ nav a:hover, nav a.active { color: #fff; }
 .gallery img { width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
 
 footer { background: #111; color: #ccc; text-align: center; padding: 20px; margin-top: 40px; }
+
+.downloads {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.downloads h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.downloads .subtitle {
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.file-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.file-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.file-list li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+}
+
+.file-list li a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.file-list li a:hover {
+  color: #005999;
+  text-decoration: underline;
+}
+
