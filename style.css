@@ -1,3 +1,4 @@
+/* === Global Styles === */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -5,20 +6,96 @@ body {
   color: #333;
 }
 
-header { display: flex; justify-content: space-between; align-items: center; background: #111; color: white; padding: 15px 30px; }
-.logo { height: 50px; }
-nav a { color: #ccc; text-decoration: none; margin-left: 20px; }
-nav a:hover, nav a.active { color: #fff; }
+/* === Header === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: white;
+  padding: 15px 30px;
+}
 
-.hero { text-align: center; padding: 120px 20px; background: #222; color: white; }
-.btn { display: inline-block; margin-top: 20px; padding: 12px 24px; background: #ff6600; color: white; border-radius: 6px; text-decoration: none; }
-.btn:hover { background: #e05500; }
+.logo {
+  height: 50px;
+}
 
-.gallery { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-.gallery img { width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin-left: 20px;
+}
 
-footer { background: #111; color: #ccc; text-align: center; padding: 20px; margin-top: 40px; }
+nav a:hover,
+nav a.active {
+  color: #fff;
+}
 
+/* === Hero Section === */
+.hero {
+  position: relative;
+  background-image: url('images/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  padding: 120px 20px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero h1,
+.hero p,
+.hero .btn {
+  position: relative;
+  z-index: 2;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #ff6600;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #e05500;
+}
+
+/* === Featured Trail Section === */
+#trails {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* === Downloads Section (XJ Files Page) === */
 .downloads {
   max-width: 900px;
   margin: 60px auto;
@@ -65,33 +142,13 @@ footer { background: #111; color: #ccc; text-align: center; padding: 20px; margi
   color: #005999;
   text-decoration: underline;
 }
-/* === Hero Section Background Image === */
-.hero {
-  position: relative;
-  background-image: url('images/background.jpeg'); /* Path to your background image */
-  background-size: cover;           /* Image covers entire section */
-  background-position: center;      /* Center the image */
-  background-repeat: no-repeat;     /* No tiling */
-  color: white;                     /* Text color */
+
+/* === Footer === */
+footer {
+  background: #111;
+  color: #ccc;
   text-align: center;
-  padding: 100px 20px;              /* Spacing for large banner look */
-  overflow: hidden;                 /* Keep overlay inside */
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
-  z-index: 1;
-}
-
-.hero h1,
-.hero p {
-  position: relative;
-  z-index: 2;  /* Keep text above the overlay */
+  padding: 20px;
+  margin-top: 40px;
 }
 
