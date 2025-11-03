@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+header { display: flex; justify-content: space-between; align-items: center; background: #111; color: white; padding: 15px 30px; }
+.logo { height: 50px; }
+nav a { color: #ccc; text-decoration: none; margin-left: 20px; }
+nav a:hover, nav a.active { color: #fff; }
+
+.hero { text-align: center; padding: 120px 20px; background: #222; color: white; }
+.btn { display: inline-block; margin-top: 20px; padding: 12px 24px; background: #ff6600; color: white; border-radius: 6px; text-decoration: none; }
+.btn:hover { background: #e05500; }
+
+.gallery { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.gallery img { width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+
+footer { background: #111; color: #ccc; text-align: center; padding: 20px; margin-top: 40px; }
