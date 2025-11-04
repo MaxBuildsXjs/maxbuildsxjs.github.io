@@ -230,7 +230,7 @@ iframe.include-header {
 iframe.include-footer {
   width: 100%;
   border: none;
-  height: 250px; /* or 300px if needed */
+  height: 300px; /* or 300px if needed */
   overflow: hidden; /* hides internal scrollbars */
 }
 .site-header, .site-footer {
