@@ -222,3 +222,15 @@ nav a.active {
   color: #777;
   font-size: 0.9rem;
 }
+iframe.include-header, iframe.include-footer {
+  width: 100%;
+  border: none;
+  height: 80px; /* Adjust to your header/footer height */
+}
+
+.site-header, .site-footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
