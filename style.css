@@ -152,3 +152,16 @@ footer {
   margin-top: 40px;
 }
 
+iframe.include-header, iframe.include-footer {
+  width: 100%;
+  border: none;
+  height: 80px; /* Adjust to your header/footer height */
+}
+
+.site-header, .site-footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
