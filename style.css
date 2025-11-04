@@ -143,11 +143,82 @@ nav a.active {
   text-decoration: underline;
 }
 
-/* === Footer === */
-footer {
-  background: #111;
+/* === Modern Footer === */
+.site-footer {
+  background-color: #111;
   color: #ccc;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-content h3,
+.footer-content h4 {
+  color: #fff;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-left p {
+  margin-top: 10px;
+  line-height: 1.5;
+  color: #aaa;
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-center ul li {
+  margin: 8px 0;
+}
+
+.footer-center ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-center ul li a:hover {
+  color: #ff6600;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1); /* makes white icons work on dark bg */
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+  filter: brightness(0) invert(0.7);
+}
+
+.footer-bottom {
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 15px;
+  color: #777;
+  font-size: 0.9rem;
 }
