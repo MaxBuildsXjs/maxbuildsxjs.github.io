@@ -222,12 +222,17 @@ nav a.active {
   color: #777;
   font-size: 0.9rem;
 }
-iframe.include-header, iframe.include-footer {
+iframe.include-header {
   width: 100%;
   border: none;
   height: 80px; /* Adjust to your header/footer height */
 }
-
+iframe.include-footer {
+  width: 100%;
+  border: none;
+  height: 250px; /* or 300px if needed */
+  overflow: hidden; /* hides internal scrollbars */
+}
 .site-header, .site-footer {
   background: #111;
   color: white;
