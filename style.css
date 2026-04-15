@@ -1,5 +1,5 @@
 /* =========================
-   GLOBAL RESET + BASE
+   GLOBAL RESET
 ========================= */
 * {
   box-sizing: border-box;
@@ -18,7 +18,7 @@ p {
 }
 
 /* =========================
-   GLOBAL CONTAINER SYSTEM
+   GLOBAL CONTAINER
 ========================= */
 .container {
   max-width: 1100px;
@@ -93,7 +93,7 @@ nav a.active {
 }
 
 /* =========================
-   PAGE HEADERS (ALL PAGES)
+   PAGE TITLES
 ========================= */
 .page-title {
   text-align: center;
@@ -105,108 +105,6 @@ nav a.active {
   text-align: center;
   color: #666;
   margin-bottom: 40px;
-}
-
-/* =========================
-   CARDS SYSTEM (USED EVERYWHERE)
-========================= */
-.card,
-.info-card,
-.service-card,
-.team-card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-}
-
-/* =========================
-   SERVICES PAGE
-========================= */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
-  justify-content: center;
-  gap: 20px;
-}
-
-.service-card {
-  padding: 25px;
-  text-align: center;
-  transition: transform 0.2s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-}
-
-.icon {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-}
-
-.services-cta {
-  text-align: center;
-  background: #111;
-  color: white;
-  padding: 60px 20px;
-  border-radius: 12px;
-  margin-top: 40px;
-}
-
-.cta-button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 25px;
-  background: #ff6600;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-}
-
-/* =========================
-   TEAM PAGE
-========================= */
-.team-card {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  padding: 25px;
-  max-width: 1000px;
-  margin: 0 auto 25px;
-  transition: transform 0.2s ease;
-}
-
-.team-card:hover {
-  transform: translateY(-5px);
-}
-
-.team-img img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-.team-info h3 {
-  color: #ff6600;
-  font-weight: normal;
-}
-
-.team-info p {
-  color: #555;
-}
-
-/* =========================
-   ABOUT PAGE (NEW STYLE)
-========================= */
-.info-card {
-  padding: 30px;
-  margin-bottom: 25px;
-}
-
-.info-card h2 {
-  margin-top: 0;
-  color: #111;
 }
 
 /* =========================
@@ -237,6 +135,7 @@ nav a.active {
   max-width: 900px;
   margin: 60px auto;
   text-align: center;
+  padding: 0 20px;
 }
 
 .file-list {
@@ -255,11 +154,115 @@ nav a.active {
   text-decoration: none;
 }
 
+.file-list a:hover {
+  color: #005999;
+}
+
+/* =========================
+   SERVICES GRID (FIXED CENTERING)
+========================= */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+  justify-content: center;
+  gap: 20px;
+}
+
+/* SERVICE CARDS */
+.service-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+/* SERVICES CTA */
+.services-cta {
+  text-align: center;
+  background: #111;
+  color: white;
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.cta-button:hover {
+  background: #e05500;
+}
+
+/* =========================
+   TEAM PAGE
+========================= */
+.team-card {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  background: white;
+  padding: 25px;
+  margin: 0 auto 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  max-width: 1000px;
+  transition: transform 0.2s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.team-info h3 {
+  color: #ff6600;
+  font-weight: normal;
+}
+
+.team-info p {
+  color: #555;
+}
+
+/* =========================
+   ABOUT PAGE
+========================= */
+.info-card {
+  background: white;
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
 /* =========================
    FOOTER
 ========================= */
 .site-footer {
-  background: #111;
+  background-color: #111;
   color: #ccc;
   padding: 40px 20px 20px;
 }
@@ -279,17 +282,18 @@ nav a.active {
   margin-top: 30px;
   padding-top: 15px;
   color: #777;
+  font-size: 0.9rem;
 }
 
 /* =========================
-   MOBILE FIXES
+   MOBILE FIX
 ========================= */
 @media (max-width: 768px) {
 
   header {
     flex-direction: column;
-    gap: 10px;
     text-align: center;
+    gap: 10px;
   }
 
   nav a {
