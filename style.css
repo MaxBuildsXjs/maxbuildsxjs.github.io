@@ -1,15 +1,20 @@
 /* =========================
    GLOBAL BASE
 ========================= */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f7f7f7;
   color: #333;
+  line-height: 1.5;
 }
 
 p {
-  margin: 20px;
+  margin: 0 0 20px;
 }
 
 /* =========================
@@ -76,6 +81,15 @@ nav a.active {
 
 .btn:hover {
   background: #e05500;
+}
+
+/* =========================
+   GLOBAL CONTAINER (IMPORTANT FIX)
+========================= */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* =========================
@@ -166,7 +180,6 @@ nav a.active {
 
 .footer-left p {
   color: #aaa;
-  line-height: 1.5;
 }
 
 .footer-center ul {
@@ -213,10 +226,8 @@ nav a.active {
 }
 
 /* =========================
-   SERVICES PAGE (FIXED + CENTERED)
+   SERVICES PAGE (FIXED)
 ========================= */
-
-/* HERO */
 .services-hero {
   background: url("images/backround.jpeg") center/cover no-repeat;
   height: 55vh;
@@ -240,14 +251,6 @@ nav a.active {
   max-width: 700px;
 }
 
-/* CONTAINER */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* INTRO */
 .services-intro {
   text-align: center;
   padding: 60px 0 30px;
@@ -258,9 +261,7 @@ nav a.active {
   line-height: 1.6;
 }
 
-/* =========================
-   FIXED SERVICES GRID (CENTERED)
-========================= */
+/* GRID FIX (CENTERED + CONSISTENT) */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
@@ -290,9 +291,7 @@ nav a.active {
   margin-bottom: 10px;
 }
 
-/* =========================
-   CTA
-========================= */
+/* CTA */
 .services-cta {
   text-align: center;
   background: #111;
@@ -317,16 +316,86 @@ nav a.active {
 }
 
 /* =========================
-   IFRAME SUPPORT (if still used)
+   TEAM PAGE (CLEANED)
 ========================= */
-iframe.include-header {
-  width: 100%;
-  border: none;
-  height: 80px;
+.team-page {
+  padding: 60px 20px;
 }
 
-iframe.include-footer {
-  width: 100%;
-  border: none;
-  height: 240px;
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.page-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.team-card {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  background: white;
+  padding: 25px;
+  margin: 0 auto 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  max-width: 1000px;
+  transition: transform 0.2s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.team-info h2 {
+  margin: 0;
+}
+
+.team-info h3 {
+  margin-top: 5px;
+  color: #ff6600;
+  font-weight: normal;
+}
+
+.team-info p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* =========================
+   MOBILE FIX
+========================= */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .team-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-img img {
+    width: 180px;
+    height: 180px;
+  }
 }
