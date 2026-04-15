@@ -9,97 +9,119 @@
 
 <body>
 
-  <!-- Header (shared) -->
-  <div id="header"></div>
+<!-- Header -->
+<div id="header"></div>
 
-  <script>
-    fetch("header.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("header").innerHTML = data;
-      });
-  </script>
+<script>
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
 
-  <!-- Main Content -->
-  <main class="services-page">
+<!-- HERO -->
+<section class="services-hero">
+  <div class="hero-overlay">
+    <h1>Built. Repaired. Trail Ready.</h1>
+    <p>
+      From daily driver maintenance to full custom off-road builds, we turn Jeeps into capable machines built for real terrain.
+    </p>
+  </div>
+</section>
 
-    <section class="services-hero">
-      <h1>Services</h1>
-      <p>Jeep repairs, custom builds, and off-road preparation for daily drivers and trail rigs.</p>
-    </section>
+<!-- INTRO STRIP -->
+<section class="services-intro">
+  <h2>What We Do</h2>
+  <p>
+    We specialize in Jeep XJ platforms and off-road builds, but we work on all makes and models.
+    Whether you need repairs, upgrades, or a full trail-ready setup, we’ve got you covered.
+  </p>
+</section>
 
-    <section class="services-grid">
+<!-- SERVICES -->
+<section class="services-container">
 
-      <div class="service-card">
-        <h2>General Jeep Repair</h2>
-        <p>
-          We handle routine maintenance and repairs for Jeep XJ and similar platforms.
-          This includes suspension work, steering repair, cooling systems, brakes, and drivetrain diagnostics.
-        </p>
-      </div>
-
-      <div class="service-card">
-        <h2>Custom Off-Road Builds</h2>
-        <p>
-          From mild to extreme setups, we design and install lift kits, armor, gearing upgrades,
-          and trail-ready modifications tailored to your driving style and terrain.
-        </p>
-      </div>
-
-      <div class="service-card">
-        <h2>Engine & Drivetrain Work</h2>
-        <p>
-          Engine swaps, performance upgrades, transmission service, axle upgrades, and full drivetrain setups
-          built for strength, reliability, and off-road performance.
-        </p>
-      </div>
-
-      <div class="service-card">
-        <h2>Suspension & Lift Kits</h2>
-        <p>
-          Installation and tuning of lift kits, long-arm setups, shocks, springs, and alignment correction
-          for improved articulation and ground clearance.
-        </p>
-      </div>
-
-      <div class="service-card">
-        <h2>Off-Road Preparation</h2>
-        <p>
-          We prepare vehicles for trail use with skid plates, recovery points, lighting upgrades,
-          tire fitment, and reliability-focused upgrades.
-        </p>
-      </div>
-
-      <div class="service-card">
-        <h2>Consulting & Build Planning</h2>
-        <p>
-          Not sure where to start? We help plan your build, choose parts, set budgets, and avoid wasted money
-          so your Jeep ends up exactly how you want it.
-        </p>
-      </div>
-
-    </section>
-
-    <section class="services-footer-note">
-      <h2>Custom Work Available</h2>
+  <div class="service-row">
+    <div class="service-icon">🔧</div>
+    <div class="service-text">
+      <h2>General Jeep Repair</h2>
       <p>
-        Every build is different. If you have a specific idea or need something not listed here,
-        reach out and we can design a solution for your rig.
+        Diagnostics, suspension repair, brakes, cooling systems, steering components, and drivetrain fixes.
+        We focus on reliability so your Jeep stays on the road and on the trail.
       </p>
-    </section>
+    </div>
+  </div>
 
-  </main>
+  <div class="service-row">
+    <div class="service-icon">🛠️</div>
+    <div class="service-text">
+      <h2>Custom Off-Road Builds</h2>
+      <p>
+        Full custom builds including lift kits, armor, gearing, axles, wheels, and tire setups designed for your terrain and driving style.
+      </p>
+    </div>
+  </div>
 
-  <!-- Footer (shared) -->
-  <div id="footer"></div>
+  <div class="service-row">
+    <div class="service-icon">⚙️</div>
+    <div class="service-text">
+      <h2>Engine & Drivetrain Work</h2>
+      <p>
+        Engine swaps, performance upgrades, transmission service, axle swaps, gearing changes, and full drivetrain optimization.
+      </p>
+    </div>
+  </div>
 
-  <script>
-    fetch("footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer").innerHTML = data;
-      });
-  </script>
+  <div class="service-row">
+    <div class="service-icon">🏔️</div>
+    <div class="service-text">
+      <h2>Suspension & Lift Setup</h2>
+      <p>
+        Lift kits, long arm conversions, shocks, springs, and suspension tuning for articulation, clearance, and trail performance.
+      </p>
+    </div>
+  </div>
+
+  <div class="service-row">
+    <div class="service-icon">🧭</div>
+    <div class="service-text">
+      <h2>Trail Prep Packages</h2>
+      <p>
+        Recovery points, skid plates, lighting, tire fitment, and reliability upgrades so your rig is ready for anything the trail throws at it.
+      </p>
+    </div>
+  </div>
+
+  <div class="service-row">
+    <div class="service-icon">📋</div>
+    <div class="service-text">
+      <h2>Build Consulting</h2>
+      <p>
+        Planning a build? We help you choose parts, avoid wasted money, and design a setup that matches your budget and goals.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="services-cta">
+  <h2>Have a Project in Mind?</h2>
+  <p>Custom work is always available. Let’s build something that fits your Jeep and your goals.</p>
+  <a href="mailto:maxbuildsxj@gmail.com" class="cta-button">Contact Us</a>
+</section>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
 
 </body>
 </html>
