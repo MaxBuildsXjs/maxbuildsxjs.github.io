@@ -237,3 +237,122 @@ iframe.include-footer {
 p {
   margin: 20px;
 }
+
+/* =========================
+   SERVICES PAGE (PREMIUM)
+========================= */
+
+/* HERO */
+.services-hero {
+  background: url("images/backround.jpeg") center/cover no-repeat;
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.services-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-overlay {
+  position: relative;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.services-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.services-hero p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* INTRO */
+.services-intro {
+  text-align: center;
+  padding: 60px 20px 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.services-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* SERVICES LIST */
+.services-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* each service row */
+.service-row {
+  display: flex;
+  gap: 20px;
+  padding: 25px;
+  margin-bottom: 15px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.service-row:hover {
+  transform: translateY(-4px);
+}
+
+.service-icon {
+  font-size: 2rem;
+  min-width: 50px;
+}
+
+.service-text h2 {
+  margin: 0 0 8px;
+}
+
+.service-text p {
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* CTA */
+.services-cta {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 40px;
+}
+
+.services-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background: #e05500;
+}
