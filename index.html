@@ -9,17 +9,15 @@
 
 <body>
   <!-- Header -->
-  <header class="site-header">
-    <img src="images/logo.png" alt="MaxBuildsXJ Logo" class="logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="xjfiles.html">XJ Files</a>
-      <a href="trails.html">Trails</a>
-      <a href="https://www.youtube.com/@MaxBuildsXjs" target="_blank" rel="noopener">YouTube</a>
-    </nav>
-  </header>
+<div id="header"></div>
 
+<script>
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
   <!-- Hero Section -->
   <section class="hero">
     <h1>Welcome to MaxBuildsXJs</h1>
@@ -41,6 +39,14 @@
   </section>
 
   <!-- Footer -->
-  <iframe src="footer.html" class="include-footer" frameborder="0"></iframe>
+ <div id="footer"></div>
+
+<script>
+fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
 </body>
 </html>
