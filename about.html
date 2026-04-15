@@ -6,8 +6,10 @@
   <title>About | MaxBuildsXJ</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
+
+<!-- HEADER -->
 <div id="header"></div>
 
 <script>
@@ -17,22 +19,66 @@ fetch("header.html")
     document.getElementById("header").innerHTML = data;
   });
 </script>
-  
-  <section>
-    <center>
-    <h1>About MaxBuildsXJs</h1>
-    <p>This site is all about Jeep builds and trail guides.</p>
 
-      <h2>About Me</h2>
-      <p>I have been around cars for as long as I can remember. My earliest memories include sitting in the garage watching my dad wrench on engines and learning the difference between bolts and spark plugs before I could even ride a bike. My dad was the biggest influence on me getting into cars. He owned a 1991 Jeep YJ Renegade when I was growing up, and that Jeep became the symbol of freedom and adventure for me. I always said I wanted to own that Jeep one day when I grew up.
+<main class="container about-page">
 
-My childhood was filled with projects in the garage. We spent countless weekends working on his 1968 AMC AMX. I learned patience, problem solving, and how to turn frustration into determination. My mom’s 1968 Plymouth Barracuda and our 1967 station wagon also became parts of my education. Those cars were not just metal and engines. They were hours spent together as a family and lessons that built who I am.
+  <h1 class="page-title">About MaxBuildsXJ</h1>
+  <p class="page-subtitle">
+    Jeep builds, trail exploration, and learning everything through hands-on experience.
+  </p>
 
-Owning a Jeep has always been more than having something to drive. It lets me get outside and explore places most people never see. A Jeep gives you access to mountains, valleys, and old forgotten roads where nature still feels wild. I have made so many memories on camping trips and scouting adventures, and Jeeps were always part of the journey. They were how we got into the backcountry, found hidden lakes, and sat around fires far from crowds.
+  <!-- MAIN ABOUT CARD -->
+  <section class="info-card">
 
-I am doing this because cars and Jeeps shaped the person I became. They taught me about hard work, problem solving, and the reward that comes from building something yourself. My goal is to share that passion and help others experience the same adventures and connections that I found through Jeeps, family, and the outdoors.</p>
-    </center>
+    <h2>What This Site Is</h2>
+    <p>
+      MaxBuildsXJ is a space built around Jeep culture, off-road exploration, and hands-on mechanical work.
+      It documents real trail runs, builds, repairs, and everything that comes with learning vehicles the hard way
+      through experience instead of just theory.
+    </p>
+
+    <p>
+      The goal is to create a place where people can learn about Jeep XJs, see real trail conditions,
+      and get inspiration for their own builds and adventures.
+    </p>
+
   </section>
+
+  <!-- STORY CARD -->
+  <section class="info-card">
+
+    <h2>My Story</h2>
+    <p>
+      I grew up around cars and garages. A lot of my early experience came from watching family members
+      work on engines, troubleshoot problems, and slowly turn broken vehicles into running machines again.
+    </p>
+
+    <p>
+      Over time, that turned into a deeper interest in Jeeps and off-roading. Being able to take a vehicle
+      into the mountains, explore trails, and test builds in real conditions became what I enjoy most.
+    </p>
+
+    <p>
+      This site is basically the result of all of that — a way to document builds, share knowledge,
+      and keep track of the trails and projects I’ve worked on.
+    </p>
+
+  </section>
+
+  <!-- MISSION CARD -->
+  <section class="info-card">
+
+    <h2>Mission</h2>
+    <p>
+      The goal is simple: build capable rigs, learn as much as possible, and help others get into off-roading
+      without overcomplicating it or making it feel out of reach.
+    </p>
+
+  </section>
+
+</main>
+
+<!-- FOOTER -->
 <div id="footer"></div>
 
 <script>
@@ -42,5 +88,6 @@ fetch("footer.html")
     document.getElementById("footer").innerHTML = data;
   });
 </script>
+
 </body>
 </html>
