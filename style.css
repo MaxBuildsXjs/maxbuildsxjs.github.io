@@ -1,5 +1,5 @@
 /* =========================
-   GLOBAL RESET / BASE
+   GLOBAL BASE
 ========================= */
 body {
   margin: 0;
@@ -48,7 +48,6 @@ nav a.active {
   text-align: center;
   color: white;
   padding: 120px 20px;
-  overflow: hidden;
 }
 
 .hero::before {
@@ -101,7 +100,7 @@ nav a.active {
 }
 
 /* =========================
-   DOWNLOADS (XJ FILES)
+   XJ FILES (DOWNLOADS)
 ========================= */
 .downloads {
   max-width: 900px;
@@ -214,22 +213,7 @@ nav a.active {
 }
 
 /* =========================
-   IFRAME SUPPORT (OLD METHOD)
-========================= */
-iframe.include-header {
-  width: 100%;
-  border: none;
-  height: 80px;
-}
-
-iframe.include-footer {
-  width: 100%;
-  border: none;
-  height: 240px;
-}
-
-/* =========================
-   SERVICES PAGE (CLEAN VERSION)
+   SERVICES PAGE (FIXED + CENTERED)
 ========================= */
 
 /* HERO */
@@ -274,10 +258,13 @@ iframe.include-footer {
   line-height: 1.6;
 }
 
-/* GRID */
+/* =========================
+   FIXED SERVICES GRID (CENTERED)
+========================= */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+  justify-content: center;
   gap: 20px;
   padding: 20px 0 60px;
 }
@@ -289,6 +276,8 @@ iframe.include-footer {
   padding: 25px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
   text-align: center;
+  width: 100%;
+  max-width: 320px;
   transition: transform 0.2s ease;
 }
 
@@ -301,7 +290,9 @@ iframe.include-footer {
   margin-bottom: 10px;
 }
 
-/* CTA */
+/* =========================
+   CTA
+========================= */
 .services-cta {
   text-align: center;
   background: #111;
@@ -323,4 +314,19 @@ iframe.include-footer {
 
 .cta-button:hover {
   background: #e05500;
+}
+
+/* =========================
+   IFRAME SUPPORT (if still used)
+========================= */
+iframe.include-header {
+  width: 100%;
+  border: none;
+  height: 80px;
+}
+
+iframe.include-footer {
+  width: 100%;
+  border: none;
+  height: 240px;
 }
