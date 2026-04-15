@@ -356,3 +356,109 @@ p {
 .cta-button:hover {
   background: #e05500;
 }
+/* =========================
+   GLOBAL CENTER CONTAINER
+========================= */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =========================
+   HERO
+========================= */
+.services-hero {
+  background: url("images/backround.jpeg") center/cover no-repeat;
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.services-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-overlay {
+  position: relative;
+  max-width: 700px;
+}
+
+/* =========================
+   INTRO
+========================= */
+.services-intro {
+  text-align: center;
+  padding: 60px 0 30px;
+}
+
+.services-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.services-intro p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* =========================
+   SERVICE CARDS
+========================= */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 20px 0 60px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   CTA
+========================= */
+.services-cta {
+  text-align: center;
+  background: #111;
+  color: white;
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin-bottom: 60px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.cta-button:hover {
+  background: #e05500;
+}
