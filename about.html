@@ -7,14 +7,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <div id="header"></div>
-  <script>
+  
+<div id="header"></div>
+
+<script>
 fetch("header.html")
-  .then(response => response.text())
+  .then(res => res.text())
   .then(data => {
     document.getElementById("header").innerHTML = data;
   });
 </script>
+  
   <section>
     <center>
     <h1>About MaxBuildsXJs</h1>
@@ -30,8 +33,14 @@ Owning a Jeep has always been more than having something to drive. It lets me ge
 I am doing this because cars and Jeeps shaped the person I became. They taught me about hard work, problem solving, and the reward that comes from building something yourself. My goal is to share that passion and help others experience the same adventures and connections that I found through Jeeps, family, and the outdoors.</p>
     </center>
   </section>
-  <footer>
-   <iframe src="footer.html" class="include-footer" frameborder="0"></iframe>
-  </footer>
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
 </body>
 </html>
