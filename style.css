@@ -1,4 +1,6 @@
-/* === Global Styles === */
+/* =========================
+   GLOBAL RESET / BASE
+========================= */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,7 +8,13 @@ body {
   color: #333;
 }
 
-/* === Header === */
+p {
+  margin: 20px;
+}
+
+/* =========================
+   HEADER
+========================= */
 header {
   display: flex;
   justify-content: space-between;
@@ -31,13 +39,12 @@ nav a.active {
   color: #fff;
 }
 
-/* === Hero Section === */
+/* =========================
+   HERO (HOME)
+========================= */
 .hero {
   position: relative;
-  background-image: url('images/backround.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("images/backround.jpeg") center/cover no-repeat;
   text-align: center;
   color: white;
   padding: 120px 20px;
@@ -47,12 +54,8 @@ nav a.active {
 .hero::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
 }
 
 .hero h1,
@@ -76,7 +79,9 @@ nav a.active {
   background: #e05500;
 }
 
-/* === Featured Trail Section === */
+/* =========================
+   TRAILS / GALLERY
+========================= */
 #trails {
   text-align: center;
   padding: 60px 20px;
@@ -92,10 +97,12 @@ nav a.active {
 .gallery img {
   width: 300px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* === Downloads Section (XJ Files Page) === */
+/* =========================
+   DOWNLOADS (XJ FILES)
+========================= */
 .downloads {
   max-width: 900px;
   margin: 60px auto;
@@ -105,19 +112,11 @@ nav a.active {
 
 .downloads h1 {
   font-size: 2rem;
-  margin-bottom: 10px;
 }
 
 .downloads .subtitle {
-  font-size: 1.1rem;
   color: #777;
   margin-bottom: 40px;
-}
-
-.file-container h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  text-align: left;
 }
 
 .file-list {
@@ -132,23 +131,22 @@ nav a.active {
   padding: 8px 0;
 }
 
-.file-list li a {
+.file-list a {
   color: #0077cc;
   text-decoration: none;
-  font-weight: 500;
 }
 
-.file-list li a:hover {
+.file-list a:hover {
   color: #005999;
-  text-decoration: underline;
 }
 
-/* === Modern Footer === */
+/* =========================
+   FOOTER
+========================= */
 .site-footer {
   background-color: #111;
   color: #ccc;
   padding: 40px 20px 20px;
-  font-family: Arial, sans-serif;
 }
 
 .footer-content {
@@ -160,11 +158,6 @@ nav a.active {
   gap: 30px;
 }
 
-.footer-content h3,
-.footer-content h4 {
-  color: #fff;
-}
-
 .footer-left,
 .footer-center,
 .footer-right {
@@ -173,9 +166,8 @@ nav a.active {
 }
 
 .footer-left p {
-  margin-top: 10px;
-  line-height: 1.5;
   color: #aaa;
+  line-height: 1.5;
 }
 
 .footer-center ul {
@@ -183,17 +175,16 @@ nav a.active {
   padding: 0;
 }
 
-.footer-center ul li {
+.footer-center li {
   margin: 8px 0;
 }
 
-.footer-center ul li a {
+.footer-center a {
   color: #ccc;
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
 }
 
-.footer-center ul li a:hover {
+.footer-center a:hover {
   color: #ff6600;
 }
 
@@ -205,13 +196,12 @@ nav a.active {
 .social-icons img {
   width: 28px;
   height: 28px;
-  filter: brightness(0) invert(1); /* makes white icons work on dark bg */
-  transition: transform 0.2s ease-in-out;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease;
 }
 
 .social-icons img:hover {
   transform: scale(1.1);
-  filter: brightness(0) invert(0.7);
 }
 
 .footer-bottom {
@@ -222,152 +212,27 @@ nav a.active {
   color: #777;
   font-size: 0.9rem;
 }
+
+/* =========================
+   IFRAME SUPPORT (OLD METHOD)
+========================= */
 iframe.include-header {
   width: 100%;
   border: none;
-  height: 80px; /* Adjust to your header/footer height */
+  height: 80px;
 }
+
 iframe.include-footer {
   width: 100%;
   border: none;
   height: 240px;
-  overflow: hidden; /* hides internal scrollbars */
-}
-
-p {
-  margin: 20px;
 }
 
 /* =========================
-   SERVICES PAGE (PREMIUM)
+   SERVICES PAGE (CLEAN VERSION)
 ========================= */
 
 /* HERO */
-.services-hero {
-  background: url("images/backround.jpeg") center/cover no-repeat;
-  position: relative;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-}
-
-.services-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-}
-
-.hero-overlay {
-  position: relative;
-  max-width: 800px;
-  padding: 20px;
-}
-
-.services-hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.services-hero p {
-  font-size: 1.2rem;
-  color: #ddd;
-}
-
-/* INTRO */
-.services-intro {
-  text-align: center;
-  padding: 60px 20px 30px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.services-intro h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-/* SERVICES LIST */
-.services-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* each service row */
-.service-row {
-  display: flex;
-  gap: 20px;
-  padding: 25px;
-  margin-bottom: 15px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease;
-}
-
-.service-row:hover {
-  transform: translateY(-4px);
-}
-
-.service-icon {
-  font-size: 2rem;
-  min-width: 50px;
-}
-
-.service-text h2 {
-  margin: 0 0 8px;
-}
-
-.service-text p {
-  margin: 0;
-  color: #555;
-  line-height: 1.5;
-}
-
-/* CTA */
-.services-cta {
-  background: #111;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-  margin-top: 40px;
-}
-
-.services-cta h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.cta-button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 25px;
-  background: #ff6600;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-.cta-button:hover {
-  background: #e05500;
-}
-/* =========================
-   GLOBAL CENTER CONTAINER
-========================= */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* =========================
-   HERO
-========================= */
 .services-hero {
   background: url("images/backround.jpeg") center/cover no-repeat;
   height: 55vh;
@@ -391,17 +256,17 @@ p {
   max-width: 700px;
 }
 
-/* =========================
-   INTRO
-========================= */
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* INTRO */
 .services-intro {
   text-align: center;
   padding: 60px 0 30px;
-}
-
-.services-intro h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
 }
 
 .services-intro p {
@@ -409,9 +274,7 @@ p {
   line-height: 1.6;
 }
 
-/* =========================
-   SERVICE CARDS
-========================= */
+/* GRID */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -419,6 +282,7 @@ p {
   padding: 20px 0 60px;
 }
 
+/* CARDS */
 .service-card {
   background: white;
   border-radius: 12px;
@@ -437,9 +301,7 @@ p {
   margin-bottom: 10px;
 }
 
-/* =========================
-   CTA
-========================= */
+/* CTA */
 .services-cta {
   text-align: center;
   background: #111;
