@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet the Team | MaxBuildsXJ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<script>
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
+
+<!-- MAIN -->
+<main class="container team-page">
+
+  <h1 class="page-title">Meet the Team</h1>
+  <p class="page-subtitle">
+    The people behind MaxBuildsXJ and the builds, trails, and content.
+  </p>
+
+  <!-- YOU -->
+  <section class="team-card">
+
+    <div class="team-img">
+      <img src="images/placeholder-you.jpg" alt="Max Builds XJ Founder">
+    </div>
+
+    <div class="team-info">
+      <h2>Max</h2>
+      <h3>Founder / Builder / Driver</h3>
+      <p>
+        I’ve been around cars and Jeeps my whole life. Growing up in the garage with my family
+        taught me everything from basic maintenance to full engine work. This site started as a way
+        to share my builds, trail experiences, and everything I’ve learned working on Jeeps.
+        My goal is to keep building rigs that can handle real terrain and help others get into off-roading.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- CAYDEN -->
+  <section class="team-card">
+
+    <div class="team-img">
+      <img src="images/placeholder-cayden.jpg" alt="Cayden Comstock">
+    </div>
+
+    <div class="team-info">
+      <h2>Cayden Comstock</h2>
+      <h3>Trail Partner / Builder</h3>
+      <p>
+        Cayden is a key part of the MaxBuildsXJ crew. He helps on trail runs, builds, and recovery situations
+        and is always involved in pushing rigs further and making trips more capable and fun.
+        Whether it’s spotting on difficult lines or helping with fabrication work, he plays a big role in
+        keeping everything moving forward.
+      </p>
+    </div>
+
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script>
+fetch("footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+</body>
+</html>
